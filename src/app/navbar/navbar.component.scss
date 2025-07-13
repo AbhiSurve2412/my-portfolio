@@ -1,0 +1,25 @@
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 2.5rem;
+padding: 0.6rem;
+background: black;
+
+.profile-picture{
+    border:solid 1px white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: white;
+}
+
+.menu-items{
+    display: flex;
+    gap : 1.25rem;
+    
+    .menu-item{
+        color : white;
+        cursor : pointer;
+    }
+}
+}
