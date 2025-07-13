@@ -4,7 +4,6 @@ justify-content: space-between;
 align-items: center;
 height: 2.5rem;
 padding: 0.6rem;
-background: black;
 
 .profile-picture{
     border:solid 1px white;
@@ -20,6 +19,7 @@ background: black;
     .menu-item{
         color : white;
         cursor : pointer;
+        text-decoration:  none;
     }
 }
 }
