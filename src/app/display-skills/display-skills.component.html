@@ -1,14 +1,14 @@
 <div class="skill-card">
-    <h3 class="skill-type">{{ skillType }}</h3>
-    <mat-divider></mat-divider>
-    <div class="skills">
-      @for (skill of skills; track skill.title) {
-        <div class="display-skill-container">
-          <div class="skill-logo">
-            <mat-icon [svgIcon]="skill.icon"></mat-icon>
-          </div>
-          <div class="skill-title">{{ skill.title }}</div>
+  <h3 class="skill-type">{{ skillType }}</h3>
+  <mat-divider></mat-divider>
+  <div class="skills">
+    @for (skill of skills; track skill.title) {
+      <div class="display-skill-container">
+        <div class="skill-logo">
+          <mat-icon [svgIcon]="skill.icon" class="skill-icon"></mat-icon>
         </div>
-      }
-    </div>
+        <div class="skill-title">{{ skill.title }}</div>
+      </div>
+    }
   </div>
+</div>

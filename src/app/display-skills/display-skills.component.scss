@@ -1,39 +1,104 @@
 .skill-card {
-    padding: 1rem;
-    background: rgb(50, 48, 58);
-    border: 1px solid;
-    border-radius: 0.5rem;
-  
-    .skill-type {
-      margin: 0;
-      padding: 0;
-      color: white;
-      font-weight: 400;
-    }
-  
-    .skills {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem; 
-      margin-top: 0.625rem; 
-  
-      .display-skill-container {
-        border: 1px solid white;
-        border-radius: 0.2rem;
-        padding: 0.25rem;
-        display: flex;
-        align-items: center;
-        gap: 0.625rem; 
-  
-        .skill-logo {
-          display: flex;
-          align-items: center;
-        }
-  
-        .skill-title {
-          color: white;
-        }
-      }
-    }
+  padding: 1.5rem;
+  background: #2d2d2d;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card:hover .skill-type {
+  color: #26a69a;
+  background: linear-gradient(#2d2d2d, #2d2d2d) padding-box,
+              linear-gradient(90deg, transparent, #26a69a, #4fc3f7, transparent) border-box;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: snake 2s linear infinite;
+}
+
+.skill-type {
+  margin: 0 0 0.5rem;
+  color: #26a69a;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+mat-divider {
+  background-color: #4fc3f7;
+  margin: 0.5rem 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.display-skill-container {
+  background: #353535;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.2s ease-in-out;
+  position: relative;
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.display-skill-container:hover {
+  background: linear-gradient(#353535, #353535) padding-box,
+              linear-gradient(90deg, transparent, #26a69a, #4fc3f7, transparent) border-box;
+  animation: snake 2s linear infinite;
+}
+
+.display-skill-container:hover .skill-title,
+.display-skill-container:hover .skill-icon {
+  color: #4fc3f7;
+}
+
+.skill-logo {
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.skill-title {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+@keyframes snake {
+  0% {
+    background-position: 0% 0%;
   }
-  
+  100% {
+    background-position: 400% 0%;
+  }
+}

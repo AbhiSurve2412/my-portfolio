@@ -1,55 +1,125 @@
-.home-container{
+.home-container {
     display: flex;
     justify-content: center;
-    padding: 2rem 5rem;
-    .home-container-items{
-        width: 80%;
-    
-        .name-container{
-            display: flex;
-            justify-content: center;
-            .name{
-                color : white;
-            }
+    align-items: center;
+    background: linear-gradient(to right, #1e1e1e, #2d2d2d);
+    padding: 2rem;
+  
+    .home-container-items {
+      width: 85%;
+      max-width: 900px;
+      animation: fadeIn 1.2s ease-out;
+  
+      .name-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+  
+        .name {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(90deg, #00c9ff, #92fe9d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px rgba(0, 201, 255, 0.4);
+          }          
+      }
+  
+      .position-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+  
+        .position {
+          font-size: 2.2rem;
+          font-weight: 600;
+          color: #ffffff;
+          text-align: center;
+          animation: pulseGlow 2s ease-in-out infinite;
+          text-shadow: 0 0 8px #4fc3f7, 0 0 15px rgba(79, 195, 247, 0.4);
         }
-    
-        .position-container{
-            display: flex;
-            justify-content: center;
-            .position{
-                color : white;
-            }
+      }
+  
+      .introduction-container {
+        .introduction {
+          color: #e0e0e0;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 1.8;
+          margin-top: 1rem;
+          animation: fadeIn 2s ease-in;
         }
-    
-        .introduction-container{
-            .introduction{
-                color : white;
-                text-align: center;
-            }
+      }
+  
+      .social-media-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 2rem;
+  
+        .link {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: #ffffff;
+          border: 2px solid transparent;
+          border-radius: 50%;
+          padding: 0.75rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(#2d2d2d, #2d2d2d) padding-box,
+                      linear-gradient(45deg, #26a69a, #4fc3f7) border-box;
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
+          i {
+            font-size: 1.5rem;
+          }
+  
+          &:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 12px rgba(38, 166, 154, 0.6), 0 0 20px rgba(79, 195, 247, 0.5);
+          }
         }
-
-        .social-media-container {
-            display: flex;
-            gap: 1.25rem;
-            justify-content: center;
-            padding: 1.25rem;
-
-            .link {
-                text-decoration: none;
-                font-size: 1.25rem;
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                transition: color 0.3s;
-                color:white;
-                border : 1px solid white;
-                border-radius: 50%;
-                padding : 0.5rem;
-            }
-
-            .link fa-icon {
-                font-size: 1.25rem;
-            }
-        }
+      }
     }
-}
+  }
+  
+  /* Animations */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      text-shadow: 0 0 6px #4fc3f7, 0 0 12px #4fc3f7;
+    }
+    50% {
+      text-shadow: 0 0 12px #4fc3f7, 0 0 24px #4fc3f7;
+    }
+    100% {
+      text-shadow: 0 0 6px #4fc3f7, 0 0 12px #4fc3f7;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
