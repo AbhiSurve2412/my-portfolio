@@ -1,0 +1,37 @@
+<div class="skills">
+  <app-display-skills
+    [skillType]="'Languages'"
+    [skills]="[
+      { icon: 'java-logo', title: 'Java' },
+      { icon: 'javascript-logo', title: 'JavaScript' },
+      { icon: 'ejs-logo', title: 'EJS' },
+      { icon: 'csharp-logo', title: 'C#' },
+      { icon: 'typescript-logo', title: 'TypeScript' }
+    ]"
+  />
+  <app-display-skills
+    [skillType]="'Frameworks'"
+    [skills]="[
+      { icon: 'react-logo', title: 'ReactJS' },
+      { icon: 'nodejs-logo', title: 'NodeJS' },
+      { icon: 'express-logo', title: 'Express.js' },
+      { icon: 'angular-logo', title: 'Angular' },
+      { icon: 'dotnet-logo', title: '.NET' },
+      { icon: 'ef6-logo', title: 'Entity Framework (EF6)' }
+    ]"
+  />
+  <app-display-skills
+    [skillType]="'Databases'"
+    [skills]="[
+      { icon: 'mongodb-logo', title: 'MongoDB' },
+      { icon: 'mysql-logo', title: 'MySQL' }
+    ]"
+  />
+  <app-display-skills
+    [skillType]="'Other'"
+    [skills]="[
+      { icon: 'dsa-logo', title: 'Data Structures & Algorithms' },
+      { icon: 'github-logo', title: 'GitHub' }
+    ]"
+  />
+</div>

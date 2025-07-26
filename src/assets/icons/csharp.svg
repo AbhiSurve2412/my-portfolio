@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon Background -->
+  <polygon points="64,8 116,36 116,92 64,120 12,92 12,36" fill="#68217A"></polygon>
+
+  <!-- C# Text -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#FFFFFF">
+    C#
+  </text>
+</svg>

@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nodes -->
+  <circle cx="64" cy="24" r="8" fill="#159ECB"></circle>
+  <circle cx="40" cy="64" r="8" fill="#159ECB"></circle>
+  <circle cx="88" cy="64" r="8" fill="#159ECB"></circle>
+  <circle cx="28" cy="104" r="8" fill="#159ECB"></circle>
+  <circle cx="52" cy="104" r="8" fill="#159ECB"></circle>
+  <circle cx="76" cy="104" r="8" fill="#159ECB"></circle>
+  <circle cx="100" cy="104" r="8" fill="#159ECB"></circle>
+
+  <!-- Edges -->
+  <line x1="64" y1="24" x2="40" y2="64" stroke="#159ECB" stroke-width="2"></line>
+  <line x1="64" y1="24" x2="88" y2="64" stroke="#159ECB" stroke-width="2"></line>
+  <line x1="40" y1="64" x2="28" y2="104" stroke="#159ECB" stroke-width="2"></line>
+  <line x1="40" y1="64" x2="52" y2="104" stroke="#159ECB" stroke-width="2"></line>
+  <line x1="88" y1="64" x2="76" y2="104" stroke="#159ECB" stroke-width="2"></line>
+  <line x1="88" y1="64" x2="100" y2="104" stroke="#159ECB" stroke-width="2"></line>
+
+  <!-- Text Label -->
+  <text x="50%" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#159ECB">
+    DSA
+  </text>
+</svg>

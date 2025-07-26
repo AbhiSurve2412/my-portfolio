@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="16" ry="16" fill="#512BD4"></rect>
+
+  <!-- .NET Text -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="36" fill="#FFFFFF">
+    .NET
+  </text>
+</svg>

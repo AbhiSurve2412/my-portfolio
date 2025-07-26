@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- Steam Lines -->
+    <path d="M75 15C85 30 60 35 75 50" stroke="#F58220" stroke-width="4" fill="none"></path>
+    <path d="M70 30C80 45 55 50 70 65" stroke="#F58220" stroke-width="4" fill="none"></path>
+    
+    <!-- Coffee Cup -->
+    <path d="M45 95C45 110 105 110 105 95C105 80 85 80 75 80C65 80 45 80 45 95Z" fill="#5382A1"></path>
+    <path d="M60 80C55 85 95 85 90 80" fill="none" stroke="#5382A1" stroke-width="3"></path>
+
+    <!-- Java Text -->
+    <text x="75" y="135" font-size="20" font-family="Arial, sans-serif" fill="#F58220" text-anchor="middle">
+      Java
+    </text>
+  </g>
+</svg>

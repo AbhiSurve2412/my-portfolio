@@ -1,0 +1,39 @@
+.skill-card {
+    padding: 1rem;
+    background: rgb(50, 48, 58);
+    border: 1px solid;
+    border-radius: 0.5rem;
+  
+    .skill-type {
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-weight: 400;
+    }
+  
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem; 
+      margin-top: 0.625rem; 
+  
+      .display-skill-container {
+        border: 1px solid white;
+        border-radius: 0.2rem;
+        padding: 0.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem; 
+  
+        .skill-logo {
+          display: flex;
+          align-items: center;
+        }
+  
+        .skill-title {
+          color: white;
+        }
+      }
+    }
+  }
+  
